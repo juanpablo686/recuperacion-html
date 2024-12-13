@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Zoológico</title>
+  <link rel="stylesheet" href="css/contacto.css">
+  <link rel="stylesheet" href="css/semantic.min.css"> 
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/semantic.min.js"></script>
+</head>
+<body>
+
+  <div class="contact-container">
+    <h1>Contacto</h1>
+
+    <div class="ui compact menu">
+        <div class="ui simple dropdown item">
+          <span>Menú</span> 
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="index.html">Inicio</a>
+            <a class="item" href="animales.html">Animales</a>
+            <a class="item" href="servicios.html">Servicios</a>
+            <a class="item" href="contacto.html">Contacto</a>
+            <a class="item" href="galeria.html">Galería</a>
+            <a class="item" href="acerca.html">Acerca de</a>
+            
+            
+          </div>
+        </div>
+      </div>
+    <!-- Formulario de contacto -->
+    <div class="contact-form">
+      <h2>Envíanos tu mensaje</h2>
+      <form action="enviar_contacto.php" method="POST">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Asunto:</label>
+        <input type="text" id="subject" name="subject">
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+      </form>
+    </div>
+
+    <!-- Información de contacto directa -->
+    <div class="contact-info">
+      <h2>Información de contacto</h2>
+      <p><strong>Teléfono:</strong> (+57) 324-287-3096</p>
+      <p><strong>Correo electrónico:</strong> contacto@zoologico.com</p>
+      <p><strong>Dirección:</strong> Calle Zoológica 123, Ciudad, Estado, CP 12345</p>
+      <p><strong>Horario:</strong> Lunes a Domingo, de 9:00 AM a 6:00 PM</p>
+    </div>
+
+    
+    <div class="social-media">
+      <h2>Síguenos en redes sociales</h2>
+      <p><a href="https://www.facebook.com/JuanPablo911" target="_blank">Facebook</a> | <a href="https://www.instagram.com/juanpa.arango_25/" target="_blank">Instagram</a>|
+    </div>
+
+    
+    <div class="location-map">
+      <h2>Ubicación</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+
+</body>
+</html>

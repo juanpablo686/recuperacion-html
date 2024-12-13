@@ -1,0 +1,114 @@
+.p1{
+font-family: cursive;
+font-size: 18px;
+}
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #1747ca;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Main Content */
+main {
+    margin-left: 7%; /* To give space for the side menu */
+    padding: 0px;
+    
+
+
+}
+
+/* Carrusel */
+.carrusel {
+     position: relative;
+    max-width: 200%;
+    margin-top: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    
+}
+
+.carousel-images img {
+    width: 30%;
+    object-fit: cover;
+    background-position: left;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #1747ca;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h1{
+    font-size: 45px;
+}
+
+
